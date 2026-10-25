@@ -1,0 +1,22 @@
+{
+  "name": "agent-platform-poc",
+  "version": "0.1.0",
+  "description": "POC d'une mini-plateforme pour cr\u00e9er, tester et d\u00e9ployer des agents IA (TypeScript)",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "demo": "tsx src/index.ts demo",
+    "serve": "tsx src/index.ts serve",
+    "build": "tsc",
+    "start": "node dist/index.js serve",
+    "test": "npm run build && node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
